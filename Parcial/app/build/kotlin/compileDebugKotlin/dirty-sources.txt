@@ -1,0 +1,5 @@
+C:\Users\Matias\androidIstic\Parcial\app\src\main\java\com\example\parcial\Contador.kt
+C:\Users\Matias\androidIstic\Parcial\app\src\main\java\com\example\parcial\ContadorTruco.kt
+C:\Users\Matias\androidIstic\Parcial\app\src\main\java\com\example\parcial\Jugar.kt
+C:\Users\Matias\androidIstic\Parcial\app\src\main\java\com\example\parcial\Login.kt
+C:\Users\Matias\androidIstic\Parcial\app\src\main\java\com\example\parcial\MainActivity.kt

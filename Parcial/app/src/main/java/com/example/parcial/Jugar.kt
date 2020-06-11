@@ -1,10 +1,10 @@
 package com.example.parcial
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_jugar_juego.*
-import kotlinx.android.synthetic.main.activity_main.*
 import android.widget.Toast.makeText as makeText1
 
 class Jugar : AppCompatActivity()
@@ -22,9 +22,20 @@ class Jugar : AppCompatActivity()
            BtnConfirmar.setOnClickListener();
            //botón para verificar el número
 
-           BtnSalir
-           BtnSalir.setOnClickListener() //botón para salir y volver a la pantalla anterior
-           makeText1(this, "El número secreto es: ", numeroSecreto.toString())
+
+           btnMostrarNumero.setOnClickListener{
+
+               makeText1(this, "El número secreto es: ", numeroSecreto.toString())
+           }
+
+           btnSalir4.setOnClickListener{
+               val intent: Intent = Intent(this, MainActivity::class.java)
+               startActivity(intent)
+               finish()
+           }
+               //botón para volver al main activity
+
+
 
 
            // textoFijo.text=txtNombre.text
@@ -32,14 +43,14 @@ class Jugar : AppCompatActivity()
            makeText1(this, "Tienes 10 intentos para adivinar el número Secreto ", Toast.LENGTH_LONG).show() //Le digo al jugador cuantos intenos tiene
            contador = contador + 1;
 
-           if (NumeroIngresado.text.String.toInt() > 100) //Compruebo que número ue ingresó el usuario sea menor a 100 para que sea válido,
+           if (NumeroIngresado.text.toString().toInt() > 100) //Compruebo que número ue ingresó el usuario sea menor a 100 para que sea válido,
            // en caso de que no lo sea le aviso de que no cuenta y sumo un intento al contador
            {
                makeText1(this, "Los valores mayores a 100 no son válidos ", Toast.LENGTH_LONG).show()
                contador = contador + 1;
            }
 
-           if (NumeroIngresado.String.toInt() < 0) //Compruebo que el número que ingresó el usuario no sea negativo,
+           if (NumeroIngresado.toString().toInt() < 0) //Compruebo que el número que ingresó el usuario no sea negativo,
            //en caso de que lo sea le aviso y sumo un intento al contador
            {
                makeText1(this, "Los valores negativos no son válidos ", Toast.LENGTH_LONG).show()
