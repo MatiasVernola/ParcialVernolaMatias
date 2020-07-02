@@ -28,7 +28,7 @@
             android:text="+" />
 
         <TextView
-            android:id="@+id/TextView"
+            android:id="@+id/pista"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"

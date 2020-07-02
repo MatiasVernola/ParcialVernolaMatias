@@ -19,6 +19,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.parcial.mayoresPuntajes" />
         <activity android:name="com.example.parcial.RegistroExitoso" />
         <activity android:name="com.example.parcial.Registrarse" />
         <activity android:name="com.example.parcial.SplashScreen" />
